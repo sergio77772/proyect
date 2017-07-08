@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UCR-JUJUY</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">AIzaSyAnaGyxm8FQ7m6l46LRcR9wLqWrIxHaJdM</string>
+    <string name="str_para">Para:</string>
+    <string name="str_mensaje">Escribir mensaje:</string>
+    <string name="str_enviar">Enviar</string>
+    <string name="str_nuevo">Nuevo</string>
+    <string name="str_advertencia">Advertencia!!! Los mensajes son cobrados por su Compañia de telefono!!</string>
+
+</resources>
