@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:gravity="center"
+        android:text="!Bienvenido!"
+        android:textColor="#21610B"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/usr_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#FF4000"
+        android:textSize="22dip" />
+
+        <ImageView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:src="@drawable/ucr2" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+      android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_calendar2"
+        android:drawableRight="@drawable/ic_ir"
+        android:ellipsize="none"
+        android:onClick="btn1"
+        android:text="Agregar Eventos" />
+<Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+      android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_calendar2"
+        android:drawableRight="@drawable/ic_ir"
+        android:ellipsize="none"
+        android:onClick="btn5"
+        android:text="Carteleria" />
+  <Button
+      android:id="@+id/btn2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#00addb"
+      android:drawableLeft="@drawable/ic_calendar"
+      android:drawableRight="@drawable/ic_ir"
+      android:layout_marginBottom="1dp"
+      android:layout_marginTop="1dp"
+      android:ellipsize="none"
+      android:text="calendario de Actividades" />
+
+  <Button
+      android:id="@+id/btn3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="1dp"
+      android:layout_marginTop="1dp"
+      android:background="#00addb"
+      android:drawableLeft="@drawable/ic_mapa"
+      android:drawableRight="@drawable/ic_ir"
+      android:ellipsize="none"
+      android:onClick="btnCaminatas"
+      android:text="Recorridos  y Caminatas" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableRight="@drawable/ic_ir"
+        android:ellipsize="none"
+        android:text="Sugerencias " />
+
+    <TextView
+        android:id="@+id/logoff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:gravity="center"
+        android:text="!Cerrar Sesiòn!"
+        android:textColor="#B40404"
+        android:textSize="22dip" />
+  
+</LinearLayout>
