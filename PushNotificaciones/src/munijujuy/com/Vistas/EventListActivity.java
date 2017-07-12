@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.WebChromeClient;
+
 
 public class EventListActivity extends Activity  {
 	private WebView browser;
@@ -19,6 +21,7 @@ public class EventListActivity extends Activity  {
 	 
 	       this.setContentView(R.layout.listevento);
 	       browser = (WebView)findViewById(R.id.Listvento);
+	       browser.setWebChromeClient(new WebChromeClient());
 	        //habilitamos javascript y el zoom
 	        browser.getSettings().setJavaScriptEnabled(true);
 	        browser.getSettings().setBuiltInZoomControls(true);

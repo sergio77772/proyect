@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -20,12 +21,9 @@ public class AddEventActivity extends Activity  {
 	       this.setContentView(R.layout.evento);
 	       browser = (WebView)findViewById(R.id.addEvento);
 	        //habilitamos javascript y el zoom
+	       browser.setWebChromeClient(new WebChromeClient());
 	        browser.getSettings().setJavaScriptEnabled(true);
-	        browser.getSettings().setBuiltInZoomControls(true);
-	        
-	       
-	               //habilitamos los plugins (flash)
-	           
+	        browser.getSettings().setBuiltInZoomControls(true);  
 	        browser.getSettings().setLoadWithOverviewMode(true); // Ajustamos la vista para que no se vea demasiado grande
 
 	        browser.loadUrl("http://vt000269.ferozo.com/APPUCR/droidlogin/addEvento.php");
