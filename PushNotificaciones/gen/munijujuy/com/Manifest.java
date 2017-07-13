@@ -9,9 +9,7 @@ package munijujuy.com;
 
 public final class Manifest {
     public static final class permission {
-        /** 
-	  Cambia netosolis.com.push_notificaciones por el nombre de tu package
-	
+        /**  Cambia netosolis.com.push_notificaciones por el nombre de tu package 
          */
         public static final String C2D_MESSAGE="munijujuy.com.permission.C2D_MESSAGE";
         public static final String MAPS_RECEIVE="munijujuy.com.permission.MAPS_RECEIVE";
