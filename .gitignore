@@ -1,0 +1,5 @@
+json/*
+protected/runtime
+assets
+error_log
+.htaccess
