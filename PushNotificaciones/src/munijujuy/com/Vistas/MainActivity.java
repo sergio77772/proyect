@@ -5,18 +5,23 @@ import munijujuy.com.R;
 import com.parse.ParseAnalytics;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
+	String user;
+	TextView txt_usr, logoff;
 	private Button btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
 			btnContacto;
+	private SharedPreferences prefs;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +35,7 @@ public class MainActivity extends Activity {
 		btnEvento = (Button) findViewById(R.id.buttonEvento);
 		btnCalendario = (Button) findViewById(R.id.buttonCalendario);
 		btnContacto = (Button) findViewById(R.id.buttonContacto);
-
+		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		// myWebView = (WebView) findViewById(R.id.webview);
 		// WebSettings webSettings = myWebView.getSettings();
 
@@ -104,7 +109,8 @@ public class MainActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+		//return true;
+		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override
@@ -112,11 +118,20 @@ public class MainActivity extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		switch (item.getItemId()) {
+		case R.id.menu_logout:
+			logOut();
 			return true;
-		}
-		return super.onOptionsItemSelected(item);
+		default:
+			return super.onOptionsItemSelected(item);
+		}		
+	}
+	
+	private void logOut() {
+		prefs.edit().clear().apply();
+		Intent intent = new Intent(this,LoginActivity.class);
+		intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK | intent.FLAG_ACTIVITY_CLEAR_TASK);
+		startActivity(intent);
 	}
 
 	/*

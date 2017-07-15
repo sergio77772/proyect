@@ -4,7 +4,7 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <!-- Agrega estos permisos al Manifest...... -->
+    <!-- Agrega estos permisos al Manifest. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -27,8 +27,8 @@
     <uses-permission android:name="munijujuy.com.permission.C2D_MESSAGE" />
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="8" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -109,9 +109,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="munijujuy.com.Vistas.RegistroActivity"
+            android:name=".Vistas.RegistroActivity"
             android:label="@string/title_activity_registro" >
         </activity>
+        <!--  <activity
+            android:name="munijujuy.com.Vistas.RegistroActivity"
+            android:label="@string/title_activity_registro" >
+        </activity>-->
     </application>
 
 </manifest>

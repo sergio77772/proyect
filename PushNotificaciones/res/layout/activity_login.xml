@@ -65,6 +65,16 @@
         android:layout_marginTop="10dip"
         android:text="Login" />
 
+    <Switch
+        android:id="@+id/switchRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Recordarme"
+        android:checked="true"
+        android:textOn="SI"
+        android:textOff="NO"
+        android:textColorHint="#000000" />
+
     <!-- Link to forgot passw -->
 
     <TextView
