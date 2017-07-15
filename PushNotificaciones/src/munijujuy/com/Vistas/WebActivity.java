@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -18,6 +19,7 @@ public class WebActivity extends Activity  {
 	        this.setContentView(R.layout.web);
 	        browser = (WebView)findViewById(R.id.webView);
 	        //habilitamos javascript y el zoom
+	        browser.setWebChromeClient(new WebChromeClient());
 	        browser.getSettings().setJavaScriptEnabled(true);
 	        browser.getSettings().setBuiltInZoomControls(true);
 	        

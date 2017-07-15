@@ -45,7 +45,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" android:logo="@drawable/ic_mario">
         <activity
-            android:name="munijujuy.com.Vistas.MainActivity"
+            android:name="munijujuy.com.Vistas.Login"
             android:label="@string/app_name"
             android:screenOrientation="portrait" android:launchMode="standard">
             <intent-filter>
@@ -88,6 +88,7 @@
 			<activity android:name=".Vistas.AddEventActivity"></activity>
 			<activity android:name=".Vistas.EventListActivity"></activity>
 			<activity android:name=".Vistas.ContactActivity"></activity>
+			<activity android:name=".Vistas.MainActivity"></activity>
 			
 			
     </application>
