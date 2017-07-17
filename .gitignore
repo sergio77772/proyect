@@ -1,7 +1,8 @@
-PushNotificaciones/bin
+/PushNotificaciones/bin
 PushNotificaciones/gen
 PushNotificaciones/project.properties
 *.classpath
+.classpath .project .settings/
 assets
 error_log
 
