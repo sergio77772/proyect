@@ -3,6 +3,8 @@ package munijujuy.com.Vistas;
 //importamos la libreria de parse
 import java.io.PushbackReader;
 
+import android.os.SystemClock;
+
 import com.parse.Parse;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseInstallation;
@@ -29,7 +31,8 @@ public class Aplicacion extends android.app.Application {
 		// Parse maneja canales para enviar la notificacion
 		PushService.subscribe(getBaseContext(), "Notificacion",
 				MainActivity.class);
-
+		
+		SystemClock.sleep(3000);
 	}
 
 }

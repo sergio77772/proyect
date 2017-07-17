@@ -1548,7 +1548,8 @@ containing a value of this type.
         public static final int munifon=0x7f0200a9;
         public static final int powered_by_google_dark=0x7f0200aa;
         public static final int powered_by_google_light=0x7f0200ab;
-        public static final int ucr2=0x7f0200ac;
+        public static final int splash_login=0x7f0200ac;
+        public static final int ucr2=0x7f0200ad;
     }
     public static final class id {
         public static final int Blogin=0x7f090068;
@@ -1941,6 +1942,7 @@ containing a value of this type.
         public static final int str_para=0x7f07003d;
         public static final int title_activity_login=0x7f070042;
         public static final int title_activity_registro=0x7f070043;
+        public static final int title_activity_splash_login=0x7f070044;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
  Text on a button that allows a user to make a payment with Google Wallet
@@ -1975,6 +1977,7 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060089;
+        public static final int SplashLogin=0x7f06008a;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f060068;

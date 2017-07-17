@@ -389,7 +389,8 @@ int drawable muni 0x7f0200a8
 int drawable munifon 0x7f0200a9
 int drawable powered_by_google_dark 0x7f0200aa
 int drawable powered_by_google_light 0x7f0200ab
-int drawable ucr2 0x7f0200ac
+int drawable splash_login 0x7f0200ac
+int drawable ucr2 0x7f0200ad
 int id Blogin 0x7f090068
 int id Listvento 0x7f090082
 int id action_bar 0x7f090044
@@ -631,9 +632,11 @@ int string str_nuevo 0x7f070040
 int string str_para 0x7f07003d
 int string title_activity_login 0x7f070042
 int string title_activity_registro 0x7f070043
+int string title_activity_splash_login 0x7f070044
 int string wallet_buy_button_place_holder 0x7f07002b
 int style AppBaseTheme 0x7f060088
 int style AppTheme 0x7f060089
+int style SplashLogin 0x7f06008a
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f060068
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f060072
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f060074
