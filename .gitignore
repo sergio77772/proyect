@@ -1,4 +1,4 @@
-PushNotificaciones/bin/*
+PushNotificaciones/bin*
 PushNotificaciones/project.properties
 assets
 error_log
