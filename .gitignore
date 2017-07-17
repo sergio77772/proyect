@@ -1,5 +1,5 @@
-json/*
-protected/runtime
+PushNotificaciones/bin/*
+PushNotificaciones/project.properties
 assets
 error_log
-.htaccess
+
