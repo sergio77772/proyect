@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 	String user;
 	TextView txt_usr, logoff;
 	private Button bmain,btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
-			btnContacto;
+			btnContacto, btnCamara;
 	private SharedPreferences prefs;
 
 	@Override
@@ -36,6 +36,9 @@ public class MainActivity extends Activity {
 		btnEvento = (Button) findViewById(R.id.buttonEvento);
 		btnCalendario = (Button) findViewById(R.id.buttonCalendario);
 		btnContacto = (Button) findViewById(R.id.buttonContacto);
+		btnCamara = (Button)findViewById(R.id.buttonCamara);
+		
+		
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		// myWebView = (WebView) findViewById(R.id.webview);
 		// WebSettings webSettings = myWebView.getSettings();
@@ -102,6 +105,15 @@ public class MainActivity extends Activity {
 						ContactActivity.class);
 
 				startActivityForResult(intent, 2);
+			}
+		});
+		btnCamara.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this,
+						CamaraActivity.class);
+				startActivity(intent);
+				
 			}
 		});
 	}
