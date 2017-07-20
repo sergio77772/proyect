@@ -100,6 +100,7 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
                 // uploading the file to server
                 new UploadFileToServer().execute();
+                Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
             }
         });
 	}
