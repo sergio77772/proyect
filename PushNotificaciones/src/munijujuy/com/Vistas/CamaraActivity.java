@@ -32,10 +32,10 @@ public class CamaraActivity extends Activity {
     private static final String TAG = CamaraActivity.class.getSimpleName();
     
     private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
-    private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
+    //private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
      
     public static final int MEDIA_TYPE_IMAGE = 1;
-    public static final int MEDIA_TYPE_VIDEO = 2;
+    //public static final int MEDIA_TYPE_VIDEO = 2;
   
     private Uri fileUri; // file url to store image/video
      
@@ -187,10 +187,10 @@ public class CamaraActivity extends Activity {
         if (type == MEDIA_TYPE_IMAGE) {
             mediaFile = new File(mediaStorageDir.getPath() + File.separator
                     + "IMG_" + timeStamp + ".jpg");
-        } else if (type == MEDIA_TYPE_VIDEO) {
+        } /*else if (type == MEDIA_TYPE_VIDEO) {
             mediaFile = new File(mediaStorageDir.getPath() + File.separator
                     + "VID_" + timeStamp + ".mp4");
-        } else {
+        } */else {
             return null;
         }
   
