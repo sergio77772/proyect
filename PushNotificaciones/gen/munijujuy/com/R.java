@@ -1554,7 +1554,7 @@ containing a value of this type.
     public static final class id {
         public static final int Blogin=0x7f090069;
         public static final int Bmain=0x7f09006b;
-        public static final int Listvento=0x7f090083;
+        public static final int Listvento=0x7f090087;
         public static final int action_bar=0x7f090044;
         public static final int action_bar_activity_content=0x7f090002;
         public static final int action_bar_container=0x7f090043;
@@ -1566,9 +1566,9 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090003;
         public static final int action_menu_presenter=0x7f090004;
         public static final int action_mode_close_button=0x7f09004c;
-        public static final int action_settings=0x7f090086;
+        public static final int action_settings=0x7f09008a;
         public static final int activity_chooser_view_content=0x7f09004d;
-        public static final int addEvento=0x7f090082;
+        public static final int addEvento=0x7f090086;
         public static final int adjust_height=0x7f09000d;
         public static final int adjust_width=0x7f09000e;
         public static final int always=0x7f090038;
@@ -1584,6 +1584,7 @@ containing a value of this type.
         public static final int btnSalir=0x7f090077;
         public static final int btnSend=0x7f09007b;
         public static final int btnStop=0x7f090076;
+        public static final int btnUpload=0x7f090084;
         public static final int btplay=0x7f090075;
         public static final int buttonCalendario=0x7f090071;
         public static final int buttonCamara=0x7f090073;
@@ -1627,20 +1628,22 @@ containing a value of this type.
         public static final int ifRoom=0x7f09003a;
         public static final int image=0x7f09004f;
         public static final int img=0x7f090066;
+        public static final int imgPreview=0x7f090081;
         public static final int layout1=0x7f090065;
         public static final int light=0x7f09000c;
         public static final int listMode=0x7f090030;
         public static final int list_item=0x7f090051;
         public static final int logo_only=0x7f090024;
-        public static final int map=0x7f090084;
+        public static final int map=0x7f090088;
         public static final int match_parent=0x7f09001c;
-        public static final int menu_logout=0x7f090087;
+        public static final int menu_logout=0x7f09008b;
         public static final int middle=0x7f090041;
         public static final int monochrome=0x7f09002d;
         public static final int never=0x7f09003b;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f090011;
         public static final int production=0x7f090016;
+        public static final int progressBar=0x7f090083;
         public static final int progress_circular=0x7f090005;
         public static final int progress_horizontal=0x7f090006;
         public static final int radio=0x7f090057;
@@ -1680,10 +1683,11 @@ containing a value of this type.
         public static final int top_action_bar=0x7f090048;
         public static final int txBienvenida=0x7f09006c;
         public static final int txtMsg=0x7f09007a;
+        public static final int txtPercentage=0x7f090082;
         public static final int up=0x7f090049;
         public static final int useLogo=0x7f090037;
-        public static final int webView=0x7f090085;
-        public static final int webViewContacto=0x7f090081;
+        public static final int webView=0x7f090089;
+        public static final int webViewContacto=0x7f090085;
         public static final int webkit=0x7f090080;
         public static final int wide=0x7f090009;
         public static final int withText=0x7f09003c;
@@ -1744,12 +1748,13 @@ containing a value of this type.
         public static final int activity_main=0x7f030019;
         public static final int activity_radio=0x7f03001a;
         public static final int activity_registro=0x7f03001b;
-        public static final int contacto=0x7f03001c;
-        public static final int evento=0x7f03001d;
-        public static final int listevento=0x7f03001e;
-        public static final int mapas=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
-        public static final int web=0x7f030021;
+        public static final int activity_upload=0x7f03001c;
+        public static final int contacto=0x7f03001d;
+        public static final int evento=0x7f03001e;
+        public static final int listevento=0x7f03001f;
+        public static final int mapas=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int web=0x7f030022;
     }
     public static final class menu {
         public static final int login=0x7f0d0000;
@@ -1947,6 +1952,7 @@ containing a value of this type.
         public static final int title_activity_login=0x7f070042;
         public static final int title_activity_registro=0x7f070043;
         public static final int title_activity_splash_login=0x7f070044;
+        public static final int title_activity_upload=0x7f070047;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
  Text on a button that allows a user to make a payment with Google Wallet

@@ -140,11 +140,11 @@ public class CamaraActivity extends Activity {
     }
     
     private void launchUploadActivity(boolean isImage){
-        /*Intent i = new Intent(CamaraActivity.this, UploadActivity.class);
+        Intent i = new Intent(CamaraActivity.this, UploadActivity.class);
         i.putExtra("filePath", fileUri.getPath());
         i.putExtra("isImage", isImage);
-        startActivity(i);*/
-    	Toast.makeText(this, "si funka", Toast.LENGTH_SHORT).show();
+        startActivity(i);
+    	//Toast.makeText(this, "si funka", Toast.LENGTH_SHORT).show();
     }
     
     /**
