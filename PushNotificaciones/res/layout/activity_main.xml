@@ -19,18 +19,17 @@
     <Button
         android:id="@+id/buttonRadio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:background="#F78181"
         android:drawableLeft="@drawable/ic_afiliate"
         android:drawableRight="@drawable/ic_ir"
         android:ellipsize="none"
-        
         android:text="Afiliate a la ucr" />
 
     <Button
         android:id="@+id/buttonplay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
@@ -42,7 +41,7 @@
     <Button
         android:id="@+id/buttonweb"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
@@ -53,43 +52,51 @@
     <Button
         android:id="@+id/buttonEvento"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
-         android:drawableLeft="@drawable/ic_calendar"
-      android:drawableRight="@drawable/ic_ir"
-         
         android:background="#00addb"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_ir"
         android:text="Agregar Evento" />
 
     <Button
         android:id="@+id/buttonCalendario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
-        
-            android:drawableLeft="@drawable/ic_calendar"
-      android:drawableRight="@drawable/ic_ir"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_ir"
         android:text="calendario de Actividades" />
 
     <Button
         android:id="@+id/buttonContacto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
-         android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableLeft="@drawable/ic_sugerencias"
         android:drawableRight="@drawable/ic_ir"
-        
         android:text="Contacta con Nosotros" />
+    
+    <Button
+        android:id="@+id/buttonCamara"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Camara" />
 
     <TextView
         android:id="@+id/txBienvenida"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:background="#1fa67a"
         android:gravity="center"
         android:text="DESARROLLO FEROZO SOLUCIONES INFORMATICAS(c) 2017"
