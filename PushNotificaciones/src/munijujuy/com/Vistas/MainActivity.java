@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	String user;
 	TextView txt_usr, logoff;
-	private Button btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
+	private Button bmain,btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
 			btnContacto;
 	private SharedPreferences prefs;
 
@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
 		ParseAnalytics.trackAppOpened(getIntent());
 
 		btnAfiliado = (Button) findViewById(R.id.buttonRadio);
+		//bmain = (Button) findViewById(R.id.Bmain);
 		// btnMap = (Button)findViewById(R.id.buttonplay);
 		btnWeb = (Button) findViewById(R.id.buttonweb);
 		btnEvento = (Button) findViewById(R.id.buttonEvento);

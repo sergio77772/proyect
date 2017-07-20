@@ -13,5 +13,6 @@
     <string name="title_activity_login">UCR JUJUY</string>
     <string name="title_activity_registro">UCR JUJUY</string>
     <string name="title_activity_splash_login">UCR JUJUY</string>
+    <string name="msgbtnslogin">Iniciar App Sin Login</string>
 
 </resources>

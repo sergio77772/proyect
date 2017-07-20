@@ -46,7 +46,7 @@ public class LoginActivity extends Activity {
 
 	EditText user;
 	EditText pass;
-	Button blogin;
+	Button Bmain,blogin;
 	TextView registrar;
 	Httppostaux post;
 	Switch switchRemember;
@@ -75,7 +75,8 @@ public class LoginActivity extends Activity {
 		user = (EditText) findViewById(R.id.edusuario);
 		pass = (EditText) findViewById(R.id.edpassword);
 		blogin = (Button) findViewById(R.id.Blogin);
-		registrar = (TextView) findViewById(R.id.link_to_register);
+	    Bmain= (Button) findViewById(R.id.Bmain);
+		//registrar = (TextView) findViewById(R.id.link_to_register);
 		switchRemember = (Switch)findViewById(R.id.switchRemember);
 		
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
@@ -106,6 +107,8 @@ public class LoginActivity extends Activity {
 
 			}
 		});
+		
+		
 
 	}
 	
@@ -163,6 +166,17 @@ public class LoginActivity extends Activity {
 			toast1.show();
 		}
 	}
+	
+	public void Bmain(View view) {
+			Intent i = new Intent(LoginActivity.this, MainActivity.class);
+			i.putExtra("user", "nada");
+			//evitar que al retroceder vuelva al login
+			i.setFlags(i.FLAG_ACTIVITY_NEW_TASK | i.FLAG_ACTIVITY_CLEAR_TASK);
+			startActivity(i);
+		
+	}
+	
+	
 
 	private boolean checkConnectivity() {
 		boolean enabled = true;
