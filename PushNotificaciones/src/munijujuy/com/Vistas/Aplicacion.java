@@ -32,7 +32,7 @@ public class Aplicacion extends android.app.Application {
 		PushService.subscribe(getBaseContext(), "Notificacion",
 				MainActivity.class);
 		
-		SystemClock.sleep(1500);
+		SystemClock.sleep(1200);
 	}
 
 }
