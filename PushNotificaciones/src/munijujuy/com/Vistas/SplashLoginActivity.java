@@ -19,7 +19,9 @@ public class SplashLoginActivity extends Activity {
 		//setContentView(R.layout.activity_splash_login);
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		Intent intentLogin = new Intent(this,LoginActivity.class);
+		intentLogin.setFlags(intentLogin.FLAG_ACTIVITY_NEW_TASK | intentLogin.FLAG_ACTIVITY_CLEAR_TASK);
 		Intent intentMain = new Intent(this,MainActivity.class);
+		intentMain.setFlags(intentMain.FLAG_ACTIVITY_NEW_TASK | intentMain.FLAG_ACTIVITY_CLEAR_TASK);
 		
 		if(!TextUtils.isEmpty(getUserMailPrefs()) && !TextUtils.isEmpty(getUserPassPrefs())){
 			startActivity(intentMain);
