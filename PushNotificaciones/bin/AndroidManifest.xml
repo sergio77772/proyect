@@ -112,7 +112,7 @@
         <activity
             android:name="munijujuy.com.Vistas.RegistroActivity"
             android:label="@string/title_activity_registro" >
-        </activity>
+        </activity>
         -->
         <activity
             android:name=".Vistas.SplashLoginActivity"
@@ -129,8 +129,12 @@
             android:label="@string/title_activity_camara" >
         </activity>
         <activity
-            android:name="munijujuy.com.Vistas.UploadActivity"
+            android:name=".Vistas.UploadActivity"
             android:label="@string/title_activity_upload" >
+        </activity>
+        <activity
+            android:name="munijujuy.com.Vistas.PadronActivity"
+            android:label="@string/title_activity_padron" >
         </activity>
     </application>
 

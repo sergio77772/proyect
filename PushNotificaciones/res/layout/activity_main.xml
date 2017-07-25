@@ -24,7 +24,8 @@
         android:drawableLeft="@drawable/ic_afiliate"
         android:drawableRight="@drawable/ic_ir"
         android:ellipsize="none"
-        android:text="Afiliate a la ucr" />
+        android:text="Afiliate a la ucr"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/buttonplay"
@@ -47,12 +48,13 @@
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_recorrido"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Recorridos, caravanas o caminatas" />
+        android:text="Recorridos, caravanas o caminatas"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/buttonEvento"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
@@ -74,7 +76,7 @@
     <Button
         android:id="@+id/buttonContacto"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
@@ -85,22 +87,34 @@
     <Button
         android:id="@+id/buttonCamara"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_sugerencias"
         android:drawableRight="@drawable/ic_ir"
         android:text="Camara" />
+    
+    <Button
+        android:id="@+id/buttonPadron"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Consultar Padron Electoral" />
 
     <TextView
         android:id="@+id/txBienvenida"
         android:layout_width="fill_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:background="#1fa67a"
         android:gravity="center"
         android:text="DESARROLLO FEROZO SOLUCIONES INFORMATICAS(c) 2017"
         android:textColor="#FFFFFF"
+        android:textSize="11dp"
         android:textStyle="bold" />
 
 </LinearLayout>

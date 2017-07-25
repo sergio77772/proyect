@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 	String user;
 	TextView txt_usr, logoff;
 	private Button bmain,btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
-			btnContacto, btnCamara;
+			btnContacto, btnCamara, btnPadron;
 	private SharedPreferences prefs;
 
 	@Override
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		btnCalendario = (Button) findViewById(R.id.buttonCalendario);
 		btnContacto = (Button) findViewById(R.id.buttonContacto);
 		btnCamara = (Button)findViewById(R.id.buttonCamara);
-		
+		btnPadron = (Button)findViewById(R.id.buttonPadron);
 		
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		// myWebView = (WebView) findViewById(R.id.webview);
@@ -47,7 +47,6 @@ public class MainActivity extends Activity {
 		// webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		// myWebView.loadUrl("http://www.sansalvadordejujuy.gob.ar/");
 		btnAfiliado.setOnClickListener(new View.OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -114,6 +113,15 @@ public class MainActivity extends Activity {
 						CamaraActivity.class);
 				startActivity(intent);
 				
+			}
+		});
+		
+		btnPadron.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this,
+						PadronActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
