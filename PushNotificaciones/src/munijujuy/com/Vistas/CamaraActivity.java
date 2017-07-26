@@ -138,7 +138,7 @@ public class CamaraActivity extends Activity {
          
         } 
     }
-    
+    //pedir datos aki
     private void launchUploadActivity(boolean isImage){
         Intent i = new Intent(CamaraActivity.this, UploadActivity.class);
         i.putExtra("filePath", fileUri.getPath());

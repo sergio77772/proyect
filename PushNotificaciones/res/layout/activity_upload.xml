@@ -30,6 +30,33 @@
         android:layout_height="20dp"
         android:layout_marginBottom="35dp"
         android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextEsquina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
  
     <Button
         android:id="@+id/btnUpload"

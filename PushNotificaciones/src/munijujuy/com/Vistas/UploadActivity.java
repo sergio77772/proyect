@@ -13,6 +13,9 @@ import munijujuy.com.Vistas.AndroidMultiPartEntity.ProgressListener;
 import java.io.File;
 import java.io.IOException;
  
+
+
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -23,6 +26,9 @@ import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
  
+
+
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -33,9 +39,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -57,6 +66,7 @@ public class UploadActivity extends Activity {
     private String filePath = null;
     private TextView txtPercentage;
     private ImageView imgPreview;
+    private EditText txtEmail, txtNombre, txtEsquina;
     //private VideoView vidPreview;
     private Button btnUpload;
     long totalSize = 0;
@@ -70,6 +80,10 @@ public class UploadActivity extends Activity {
         btnUpload = (Button) findViewById(R.id.btnUpload);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
+        txtEmail = (EditText)findViewById(R.id.editTextEmail);
+        txtNombre = (EditText)findViewById(R.id.editTextNombre);
+        txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
+        
         //vidPreview = (VideoView) findViewById(R.id.videoPreview);
         
         /*
@@ -95,14 +109,26 @@ public class UploadActivity extends Activity {
                     "Lo Sentimos!, falta la ruta del archivo", Toast.LENGTH_LONG).show();
         }
         btnUpload.setOnClickListener(new View.OnClickListener() {
-        	 
             @Override
             public void onClick(View v) {
                 // uploading the file to server
-                new UploadFileToServer().execute();
-                Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
+            	//tomamos los datos ingresados por el usuario
+            	String email = txtEmail.getText().toString();
+            	String nombre = txtNombre.getText().toString();
+            	String esquina = txtEsquina.getText().toString();
+            	if(isValidEmail(email)&& !nombre.isEmpty() && !esquina.isEmpty()){
+            		new UploadFileToServer().execute();
+            	}else{
+            		Toast.makeText(UploadActivity.this, "Debe completar todos los Campos Correctamente", Toast.LENGTH_SHORT).show();
+            	}
+                //new UploadFileToServer().execute();
+                //Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
             }
         });
+	}
+	//validacon email
+	private boolean isValidEmail(String mail) {
+		return !TextUtils.isEmpty(mail)&& Patterns.EMAIL_ADDRESS.matcher(mail).matches();
 	}
 	private void previewMedia(boolean isImage) {
         // Checking whether captured media is image or video
@@ -176,6 +202,9 @@ public class UploadActivity extends Activity {
                 entity.addPart("image", new FileBody(sourceFile));
  
                 //Parámetros adicionales si desea pasar al servidor
+                
+                //AGREGAR ACA LOS DATOS!!!!!!!!!!!1
+                
                 //entity.addPart("website",new StringBody("www.androidhive.info"));
                 entity.addPart("email", new StringBody("abc@gmail.com"));
  

@@ -1542,20 +1542,21 @@ containing a value of this type.
         public static final int ic_sanchez=0x7f0200a3;
         public static final int ic_sinlogos=0x7f0200a4;
         public static final int ic_sugerencias=0x7f0200a5;
-        public static final int ic_villa=0x7f0200a6;
-        public static final int ivuj=0x7f0200a7;
-        public static final int logo2=0x7f0200a8;
-        public static final int muni=0x7f0200a9;
-        public static final int munifon=0x7f0200aa;
-        public static final int powered_by_google_dark=0x7f0200ab;
-        public static final int powered_by_google_light=0x7f0200ac;
-        public static final int splash_login=0x7f0200ad;
-        public static final int ucr2=0x7f0200ae;
+        public static final int ic_urna=0x7f0200a6;
+        public static final int ic_villa=0x7f0200a7;
+        public static final int ivuj=0x7f0200a8;
+        public static final int logo2=0x7f0200a9;
+        public static final int muni=0x7f0200aa;
+        public static final int munifon=0x7f0200ab;
+        public static final int powered_by_google_dark=0x7f0200ac;
+        public static final int powered_by_google_light=0x7f0200ad;
+        public static final int splash_login=0x7f0200ae;
+        public static final int ucr2=0x7f0200af;
     }
     public static final class id {
         public static final int Blogin=0x7f090069;
         public static final int Bmain=0x7f09006b;
-        public static final int Listvento=0x7f090089;
+        public static final int Listvento=0x7f09008c;
         public static final int action_bar=0x7f090044;
         public static final int action_bar_activity_content=0x7f090002;
         public static final int action_bar_container=0x7f090043;
@@ -1567,9 +1568,9 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090003;
         public static final int action_menu_presenter=0x7f090004;
         public static final int action_mode_close_button=0x7f09004c;
-        public static final int action_settings=0x7f09008c;
+        public static final int action_settings=0x7f09008f;
         public static final int activity_chooser_view_content=0x7f09004d;
-        public static final int addEvento=0x7f090088;
+        public static final int addEvento=0x7f09008b;
         public static final int adjust_height=0x7f09000d;
         public static final int adjust_width=0x7f09000e;
         public static final int always=0x7f090038;
@@ -1585,7 +1586,7 @@ containing a value of this type.
         public static final int btnSalir=0x7f090079;
         public static final int btnSend=0x7f09007d;
         public static final int btnStop=0x7f090078;
-        public static final int btnUpload=0x7f090086;
+        public static final int btnUpload=0x7f090089;
         public static final int btplay=0x7f090077;
         public static final int buttonCalendario=0x7f090071;
         public static final int buttonCamara=0x7f090073;
@@ -1610,6 +1611,9 @@ containing a value of this type.
         public static final int donate_with=0x7f090022;
         public static final int donate_with_google=0x7f090023;
         public static final int dropdown=0x7f09003e;
+        public static final int editTextEmail=0x7f090086;
+        public static final int editTextEsquina=0x7f090088;
+        public static final int editTextNombre=0x7f090087;
         public static final int edit_query=0x7f090058;
         public static final int edpassword=0x7f090068;
         public static final int edusuario=0x7f090067;
@@ -1636,9 +1640,9 @@ containing a value of this type.
         public static final int listMode=0x7f090030;
         public static final int list_item=0x7f090051;
         public static final int logo_only=0x7f090024;
-        public static final int map=0x7f09008a;
+        public static final int map=0x7f09008d;
         public static final int match_parent=0x7f09001c;
-        public static final int menu_logout=0x7f09008d;
+        public static final int menu_logout=0x7f090090;
         public static final int middle=0x7f090041;
         public static final int monochrome=0x7f09002d;
         public static final int never=0x7f09003b;
@@ -1688,8 +1692,8 @@ containing a value of this type.
         public static final int txtPercentage=0x7f090084;
         public static final int up=0x7f090049;
         public static final int useLogo=0x7f090037;
-        public static final int webView=0x7f09008b;
-        public static final int webViewContacto=0x7f090087;
+        public static final int webView=0x7f09008e;
+        public static final int webViewContacto=0x7f09008a;
         public static final int webViewPadron=0x7f090075;
         public static final int webkit=0x7f090082;
         public static final int wide=0x7f090009;
