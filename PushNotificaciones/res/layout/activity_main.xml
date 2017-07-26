@@ -91,9 +91,9 @@
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
-        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableLeft="@drawable/ic_cam"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Camara" />
+        android:text="Comparti tu foto" />
     
     <Button
         android:id="@+id/buttonPadron"
@@ -102,9 +102,9 @@
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
-        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableLeft="@drawable/ic_urna"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Consultar Padron Electoral" />
+        android:text="Donde Voto" />
 
     <TextView
         android:id="@+id/txBienvenida"
