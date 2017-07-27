@@ -66,7 +66,7 @@ public class UploadActivity extends Activity {
     private String filePath = null;
     private TextView txtPercentage;
     private ImageView imgPreview;
-    private EditText txtEmail, txtNombre, txtEsquina;
+    private EditText txtTelefono, txtNombre, txtEsquina;
     //private VideoView vidPreview;
     private Button btnUpload;
     long totalSize = 0;
@@ -80,9 +80,13 @@ public class UploadActivity extends Activity {
         btnUpload = (Button) findViewById(R.id.btnUpload);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
-        txtEmail = (EditText)findViewById(R.id.editTextEmail);
+        txtTelefono = (EditText)findViewById(R.id.editTextEmail);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
+        
+        //CAMBIAR EMIAL POR TELEFONO
+        
+        
         
         //vidPreview = (VideoView) findViewById(R.id.videoPreview);
         
@@ -113,10 +117,10 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
                 // uploading the file to server
             	//tomamos los datos ingresados por el usuario
-            	String email = txtEmail.getText().toString();
+            	String telefono = txtTelefono.getText().toString();
             	String nombre = txtNombre.getText().toString();
             	String esquina = txtEsquina.getText().toString();
-            	if(isValidEmail(email)&& !nombre.isEmpty() && !esquina.isEmpty()){
+            	if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty()){
             		new UploadFileToServer().execute();
             	}else{
             		Toast.makeText(UploadActivity.this, "Debe completar todos los Campos Correctamente", Toast.LENGTH_SHORT).show();
@@ -206,7 +210,8 @@ public class UploadActivity extends Activity {
                 //AGREGAR ACA LOS DATOS!!!!!!!!!!!1
                 
                 //entity.addPart("website",new StringBody("www.androidhive.info"));
-                entity.addPart("email", new StringBody("abc@gmail.com"));
+                //entity.addPart("email", new StringBody("abc@gmail.com"));
+                //entity.addPart("email", new StringBody(email));
  
                 totalSize = entity.getContentLength();
                 httppost.setEntity(entity);

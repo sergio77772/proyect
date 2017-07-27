@@ -19,14 +19,54 @@
     <Button
         android:id="@+id/buttonRadio"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="0dp"
         android:background="#F78181"
         android:drawableLeft="@drawable/ic_afiliate"
         android:drawableRight="@drawable/ic_ir"
         android:ellipsize="none"
         android:text="Afiliate a la ucr"
-        android:textSize="17dp" />
+        android:textSize="17dp" 
+        android:visibility="invisible"/>
 
+    
+
+    <Button
+        android:id="@+id/buttonweb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_recorrido"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Recorridos, caravanas o caminatas"
+        android:textSize="17dp" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/buttonEvento"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Agregar Evento" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/buttonCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="calendario de Actividades" 
+        android:visibility="invisible"/>
+    
     <Button
         android:id="@+id/buttonplay"
         android:layout_width="match_parent"
@@ -37,41 +77,8 @@
         android:drawableLeft="@drawable/ic_calendar2"
         android:drawableRight="@drawable/ic_ir"
         android:onClick="btnMap"
-        android:text="Demo Mapa carteleria" />
-
-    <Button
-        android:id="@+id/buttonweb"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="1dp"
-        android:background="#00addb"
-        android:drawableLeft="@drawable/ic_recorrido"
-        android:drawableRight="@drawable/ic_ir"
-        android:text="Recorridos, caravanas o caminatas"
-        android:textSize="17dp" />
-
-    <Button
-        android:id="@+id/buttonEvento"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="1dp"
-        android:background="#00addb"
-        android:drawableLeft="@drawable/ic_calendar"
-        android:drawableRight="@drawable/ic_ir"
-        android:text="Agregar Evento" />
-
-    <Button
-        android:id="@+id/buttonCalendario"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="1dp"
-        android:background="#00addb"
-        android:drawableLeft="@drawable/ic_calendar"
-        android:drawableRight="@drawable/ic_ir"
-        android:text="calendario de Actividades" />
+        android:text="Punto Esquinas" 
+        />
 
     <Button
         android:id="@+id/buttonContacto"
