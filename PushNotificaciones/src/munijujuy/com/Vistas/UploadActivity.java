@@ -68,6 +68,7 @@ public class UploadActivity extends Activity {
     private ImageView imgPreview;
     private EditText txtTelefono, txtNombre, txtEsquina;
     //private VideoView vidPreview;
+    public static String telefono,nombre,esquina;
     private Button btnUpload;
     long totalSize = 0;
     
@@ -80,7 +81,7 @@ public class UploadActivity extends Activity {
         btnUpload = (Button) findViewById(R.id.btnUpload);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
-        txtTelefono = (EditText)findViewById(R.id.editTextEmail);
+        txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
         
@@ -117,9 +118,9 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
                 // uploading the file to server
             	//tomamos los datos ingresados por el usuario
-            	String telefono = txtTelefono.getText().toString();
-            	String nombre = txtNombre.getText().toString();
-            	String esquina = txtEsquina.getText().toString();
+            	telefono = txtTelefono.getText().toString();
+            	nombre = txtNombre.getText().toString();
+            	esquina = txtEsquina.getText().toString();
             	if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty()){
             		new UploadFileToServer().execute();
             	}else{
@@ -161,6 +162,7 @@ public class UploadActivity extends Activity {
      * Uploading the file to server
      * */
     private class UploadFileToServer extends AsyncTask<Void, Integer, String> {
+    	
         @Override
         protected void onPreExecute() {
             // setting progress bar to zero
@@ -185,6 +187,9 @@ public class UploadActivity extends Activity {
         }
         @SuppressWarnings("deprecation")
         private String uploadFile() {
+        	telefono = txtTelefono.getText().toString();
+        	nombre = txtNombre.getText().toString();
+        	esquina = txtEsquina.getText().toString();
             String responseString = null;
  
             HttpClient httpclient = new DefaultHttpClient();
@@ -208,10 +213,17 @@ public class UploadActivity extends Activity {
                 //Parámetros adicionales si desea pasar al servidor
                 
                 //AGREGAR ACA LOS DATOS!!!!!!!!!!!1
+                telefono = txtTelefono.getText().toString();
+            	nombre = txtNombre.getText().toString();
+            	esquina = txtEsquina.getText().toString();
                 
                 //entity.addPart("website",new StringBody("www.androidhive.info"));
                 //entity.addPart("email", new StringBody("abc@gmail.com"));
-                //entity.addPart("email", new StringBody(email));
+                //entity.addPart(nombre);
+                entity.addPart("nombre", new StringBody(nombre));
+                entity.addPart("esquina", new StringBody(esquina));
+                entity.addPart("telefono", new StringBody(telefono));
+                
  
                 totalSize = entity.getContentLength();
                 httppost.setEntity(entity);
