@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 	String user;
 	TextView txt_usr, logoff;
 	private Button bmain,btnWeb, btnMap, btnAfiliado, btnEvento, btnCalendario,
-			btnContacto, btnCamara, btnPadron;
+			btnContacto, btnCamara, btnPadron, btnNoticia, btnVotoFoto;
 	private SharedPreferences prefs;
 
 	@Override
@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
 		btnContacto = (Button) findViewById(R.id.buttonContacto);
 		btnCamara = (Button)findViewById(R.id.buttonCamara);
 		btnPadron = (Button)findViewById(R.id.buttonPadron);
+		btnNoticia = (Button)findViewById(R.id.buttonNoticias);
+		btnVotoFoto = (Button)findViewById(R.id.buttonVotoFoto);
 		
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		// myWebView = (WebView) findViewById(R.id.webview);
@@ -121,6 +123,24 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this,
 						PadronActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		btnNoticia.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this,
+						NoticiaActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		btnVotoFoto.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this,
+						VotoActivity.class);
 				startActivity(intent);
 			}
 		});

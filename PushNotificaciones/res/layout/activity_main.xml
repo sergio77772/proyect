@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/buttonplay"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
@@ -78,7 +78,30 @@
         android:drawableRight="@drawable/ic_ir"
         android:onClick="btnMap"
         android:text="Punto Esquinas" 
+        android:visibility="invisible"
         />
+    
+    <Button
+        android:id="@+id/buttonNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_play"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Noticias y Actualidad" />
+    
+    <Button
+        android:id="@+id/buttonVotoFoto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_play"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Vota tu imagen Favorita" />
 
     <Button
         android:id="@+id/buttonContacto"

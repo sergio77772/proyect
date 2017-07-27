@@ -17,5 +17,7 @@
     <string name="title_activity_camara">UCR JUJUY</string>
     <string name="title_activity_upload">UCR JUJUY</string>
     <string name="title_activity_padron">UCR JUJUY</string>
+    <string name="title_activity_noticia">UCR JUJUY</string>
+    <string name="title_activity_voto">UCR JUJUY</string>
 
 </resources>
