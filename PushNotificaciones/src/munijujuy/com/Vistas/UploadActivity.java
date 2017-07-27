@@ -223,7 +223,9 @@ public class UploadActivity extends Activity {
                 entity.addPart("nombre", new StringBody(nombre));
                 entity.addPart("esquina", new StringBody(esquina));
                 entity.addPart("telefono", new StringBody(telefono));
-                
+            	/*entity.addPart("nombre", new StringBody("Raul"));
+            	entity.addPart("esquina", new StringBody("plazoleta"));
+            	entity.addPart("telefono", new StringBody("1234567"));*/
  
                 totalSize = entity.getContentLength();
                 httppost.setEntity(entity);
