@@ -16,6 +16,7 @@ import java.io.IOException;
 
 
 
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -26,6 +27,7 @@ import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
  
+
 
 
 
@@ -69,7 +71,7 @@ public class UploadActivity extends Activity {
     private EditText txtTelefono, txtNombre, txtEsquina;
     //private VideoView vidPreview;
     public static String telefono,nombre,esquina;
-    private Button btnUpload;
+    private Button btnUpload, btnRegresar;
     long totalSize = 0;
     
 	@Override
@@ -79,6 +81,7 @@ public class UploadActivity extends Activity {
 		
 		txtPercentage = (TextView) findViewById(R.id.txtPercentage);
         btnUpload = (Button) findViewById(R.id.btnUpload);
+        btnRegresar = (Button)findViewById(R.id.btnRegresar);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
         txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
@@ -130,6 +133,17 @@ public class UploadActivity extends Activity {
                 //Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
             }
         });
+        
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(UploadActivity.this, MainActivity.class);
+				//i.putExtra("user", "nada");
+				//evitar que al retroceder vuelva al login
+				i.setFlags(i.FLAG_ACTIVITY_NEW_TASK | i.FLAG_ACTIVITY_CLEAR_TASK);
+				startActivity(i);
+			}
+		});
 	}
 	//validacon email
 	private boolean isValidEmail(String mail) {

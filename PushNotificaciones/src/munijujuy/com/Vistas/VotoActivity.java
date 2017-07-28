@@ -29,7 +29,7 @@ public class VotoActivity extends Activity {
 		votoFoto.getSettings().setBuiltInZoomControls(true);
 		votoFoto.getSettings().setLoadWithOverviewMode(true); // Ajustamos la vista al tamaño de pantalla
 
-		votoFoto.loadUrl("https://www.padron.gov.ar");//cambiar por la de voto foto
+		votoFoto.loadUrl("http://www.comitecapitaljujuy.com/MOVIL/");//cambiar por la de voto foto
 		
 		votoFoto.setWebViewClient(new WebViewClient(){
 			@Override
@@ -40,7 +40,7 @@ public class VotoActivity extends Activity {
 		
 	}
 	
-	@Override
+	/*@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -65,6 +65,6 @@ public class VotoActivity extends Activity {
 
 			finish();
 		}
-	}
+	}*/
 		
 }

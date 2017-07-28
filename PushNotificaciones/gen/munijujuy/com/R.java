@@ -1556,7 +1556,7 @@ containing a value of this type.
     public static final class id {
         public static final int Blogin=0x7f090069;
         public static final int Bmain=0x7f09006b;
-        public static final int Listvento=0x7f090090;
+        public static final int Listvento=0x7f090091;
         public static final int action_bar=0x7f090044;
         public static final int action_bar_activity_content=0x7f090002;
         public static final int action_bar_container=0x7f090043;
@@ -1568,9 +1568,9 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090003;
         public static final int action_menu_presenter=0x7f090004;
         public static final int action_mode_close_button=0x7f09004c;
-        public static final int action_settings=0x7f090093;
+        public static final int action_settings=0x7f090094;
         public static final int activity_chooser_view_content=0x7f09004d;
-        public static final int addEvento=0x7f09008f;
+        public static final int addEvento=0x7f090090;
         public static final int adjust_height=0x7f09000d;
         public static final int adjust_width=0x7f09000e;
         public static final int always=0x7f090038;
@@ -1583,6 +1583,7 @@ containing a value of this type.
         public static final int book_now=0x7f09001e;
         public static final int btnCapturePicture=0x7f090064;
         public static final int btnNvoMsg=0x7f090081;
+        public static final int btnRegresar=0x7f09008d;
         public static final int btnSalir=0x7f09007c;
         public static final int btnSend=0x7f090080;
         public static final int btnStop=0x7f09007b;
@@ -1642,9 +1643,9 @@ containing a value of this type.
         public static final int listMode=0x7f090030;
         public static final int list_item=0x7f090051;
         public static final int logo_only=0x7f090024;
-        public static final int map=0x7f090091;
+        public static final int map=0x7f090092;
         public static final int match_parent=0x7f09001c;
-        public static final int menu_logout=0x7f090094;
+        public static final int menu_logout=0x7f090095;
         public static final int middle=0x7f090041;
         public static final int monochrome=0x7f09002d;
         public static final int never=0x7f09003b;
@@ -1694,11 +1695,11 @@ containing a value of this type.
         public static final int txtPercentage=0x7f090087;
         public static final int up=0x7f090049;
         public static final int useLogo=0x7f090037;
-        public static final int webView=0x7f090092;
-        public static final int webViewContacto=0x7f09008e;
+        public static final int webView=0x7f090093;
+        public static final int webViewContacto=0x7f09008f;
         public static final int webViewNoticia=0x7f090077;
         public static final int webViewPadron=0x7f090078;
-        public static final int webViewVotoFoto=0x7f09008d;
+        public static final int webViewVotoFoto=0x7f09008e;
         public static final int webkit=0x7f090085;
         public static final int wide=0x7f090009;
         public static final int withText=0x7f09003c;

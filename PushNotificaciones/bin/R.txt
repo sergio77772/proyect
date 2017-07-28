@@ -395,7 +395,7 @@ int drawable splash_login 0x7f0200ae
 int drawable ucr2 0x7f0200af
 int id Blogin 0x7f090069
 int id Bmain 0x7f09006b
-int id Listvento 0x7f090090
+int id Listvento 0x7f090091
 int id action_bar 0x7f090044
 int id action_bar_activity_content 0x7f090002
 int id action_bar_container 0x7f090043
@@ -407,9 +407,9 @@ int id action_context_bar 0x7f090045
 int id action_menu_divider 0x7f090003
 int id action_menu_presenter 0x7f090004
 int id action_mode_close_button 0x7f09004c
-int id action_settings 0x7f090093
+int id action_settings 0x7f090094
 int id activity_chooser_view_content 0x7f09004d
-int id addEvento 0x7f09008f
+int id addEvento 0x7f090090
 int id adjust_height 0x7f09000d
 int id adjust_width 0x7f09000e
 int id always 0x7f090038
@@ -422,6 +422,7 @@ int id beginning 0x7f09003f
 int id book_now 0x7f09001e
 int id btnCapturePicture 0x7f090064
 int id btnNvoMsg 0x7f090081
+int id btnRegresar 0x7f09008d
 int id btnSalir 0x7f09007c
 int id btnSend 0x7f090080
 int id btnStop 0x7f09007b
@@ -481,9 +482,9 @@ int id light 0x7f09000c
 int id listMode 0x7f090030
 int id list_item 0x7f090051
 int id logo_only 0x7f090024
-int id map 0x7f090091
+int id map 0x7f090092
 int id match_parent 0x7f09001c
-int id menu_logout 0x7f090094
+int id menu_logout 0x7f090095
 int id middle 0x7f090041
 int id monochrome 0x7f09002d
 int id never 0x7f09003b
@@ -533,11 +534,11 @@ int id txtMsg 0x7f09007f
 int id txtPercentage 0x7f090087
 int id up 0x7f090049
 int id useLogo 0x7f090037
-int id webView 0x7f090092
-int id webViewContacto 0x7f09008e
+int id webView 0x7f090093
+int id webViewContacto 0x7f09008f
 int id webViewNoticia 0x7f090077
 int id webViewPadron 0x7f090078
-int id webViewVotoFoto 0x7f09008d
+int id webViewVotoFoto 0x7f09008e
 int id webkit 0x7f090085
 int id wide 0x7f090009
 int id withText 0x7f09003c

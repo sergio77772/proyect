@@ -29,7 +29,7 @@ public class NoticiaActivity extends Activity {
 		noticia.getSettings().setBuiltInZoomControls(true);
 		noticia.getSettings().setLoadWithOverviewMode(true); // Ajustamos la vista al tamaño de pantalla
 
-		noticia.loadUrl("https://www.padron.gov.ar");//cambiar por la de noticia
+		noticia.loadUrl("http://www.frentejujeñocambiemos.com.ar");//cambiar por la de noticia
 		
 		noticia.setWebViewClient(new WebViewClient(){
 			@Override
@@ -40,7 +40,7 @@ public class NoticiaActivity extends Activity {
 		
 	}
 	
-	@Override
+	/*@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -65,7 +65,7 @@ public class NoticiaActivity extends Activity {
 
 			finish();
 		}
-	}
+	}*/
 		
 	
 }
