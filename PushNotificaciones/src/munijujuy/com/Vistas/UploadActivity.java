@@ -67,7 +67,7 @@ public class UploadActivity extends Activity {
     private ProgressBar progressBar;
     private String filePath = null;
     private TextView txtPercentage;
-    private ImageView imgPreview;
+    private ImageView imgPreview, imgGaleria;
     private EditText txtTelefono, txtNombre, txtEsquina;
     //private VideoView vidPreview;
     public static String telefono,nombre,esquina;
@@ -84,13 +84,10 @@ public class UploadActivity extends Activity {
         btnRegresar = (Button)findViewById(R.id.btnRegresar);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
+        imgGaleria = (ImageView) findViewById(R.id.imgPreviewGaleria);
         txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
-        
-        //CAMBIAR EMIAL POR TELEFONO
-        
-        
         
         //vidPreview = (VideoView) findViewById(R.id.videoPreview);
         
@@ -139,7 +136,7 @@ public class UploadActivity extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(UploadActivity.this, MainActivity.class);
 				//i.putExtra("user", "nada");
-				//evitar que al retroceder vuelva al login
+				//evitar que al retroceder vuelva a la vista anterior
 				i.setFlags(i.FLAG_ACTIVITY_NEW_TASK | i.FLAG_ACTIVITY_CLEAR_TASK);
 				startActivity(i);
 			}
@@ -164,13 +161,26 @@ public class UploadActivity extends Activity {
             final Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
  
             imgPreview.setImageBitmap(bitmap);
-        } /*else {
-            imgPreview.setVisibility(View.GONE);
+        }else {
+        	imgGaleria.setVisibility(View.VISIBLE);
+            //vidPreview.setVisibility(View.GONE);
+            // bimatp factory
+            BitmapFactory.Options options = new BitmapFactory.Options();
+ 
+            // down sizing image as it throws OutOfMemory Exception for larger
+            // images
+            options.inSampleSize = 8;
+ 
+            final Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
+ 
+            imgPreview.setImageBitmap(bitmap);
+        	
+            /*imgPreview.setVisibility(View.GONE);
             vidPreview.setVisibility(View.VISIBLE);
             vidPreview.setVideoPath(filePath);
             // start playing
-            vidPreview.start();
-        }*/
+            vidPreview.start();*/
+        }
     }
 	/**
      * Uploading the file to server

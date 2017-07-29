@@ -16,11 +16,21 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnCapturePicture"
+        android:layout_above="@+id/buttonGaleria"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true" >
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCapturePicture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Seleccionar de Galeria" 
+        android:visibility="invisible"/>
 
 </RelativeLayout>

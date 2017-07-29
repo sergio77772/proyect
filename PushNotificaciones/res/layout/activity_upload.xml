@@ -13,6 +13,13 @@
         android:visibility="gone"
         android:layout_marginTop="5dp"/>
     
+    <ImageView
+        android:id="@+id/imgPreviewGaleria"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"/>
+    
     <TextView
         android:id="@+id/txtPercentage"
         android:layout_width="wrap_content"

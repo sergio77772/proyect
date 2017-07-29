@@ -32,14 +32,14 @@ public class CamaraActivity extends Activity {
     private static final String TAG = CamaraActivity.class.getSimpleName();
     
     private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
-    //private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
+    private static final int GALERIA_CAPTURE_REQUEST_CODE = 200;
      
     public static final int MEDIA_TYPE_IMAGE = 1;
-    //public static final int MEDIA_TYPE_VIDEO = 2;
+    public static final int MEDIA_TYPE_GALERIA = 2;
   
     private Uri fileUri; // file url to store image/video
      
-    private Button btnFoto, btnRecordVideo;
+    private Button btnFoto, btnGaleria;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +47,19 @@ public class CamaraActivity extends Activity {
 		setContentView(R.layout.activity_camara);
 		
 		btnFoto = (Button) findViewById(R.id.btnCapturePicture);
+		btnGaleria = (Button)findViewById(R.id.buttonGaleria);
 		
 		btnFoto.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				captureImage();
 				
+			}
+		});
+		btnGaleria.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//openGallery();
 			}
 		});
 		// Checking camera availability
@@ -86,6 +93,12 @@ public class CamaraActivity extends Activity {
         // start the image capture Intent
         startActivityForResult(intent, CAMERA_CAPTURE_IMAGE_REQUEST_CODE);
     }
+	private void openGallery(){
+	    Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+	    fileUri = getOutputMediaFileUri(MEDIA_TYPE_GALERIA);
+	    i.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
+	    startActivityForResult(i, GALERIA_CAPTURE_REQUEST_CODE);
+	}
 	
 	 /**
      * Here we store the file url as it will be null after returning from camera
@@ -136,7 +149,25 @@ public class CamaraActivity extends Activity {
                         .show();
             }
          
-        } 
+        } else if (requestCode == GALERIA_CAPTURE_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+            	fileUri = data.getData();
+                launchUploadActivity(false);
+             
+            } else if (resultCode == RESULT_CANCELED) {
+                 
+                // user cancelled recording
+                Toast.makeText(getApplicationContext(),
+                        "User cancelled seleccion de imagen", Toast.LENGTH_SHORT)
+                        .show();
+             
+            } else {
+                // failed to record video
+                Toast.makeText(getApplicationContext(),
+                        "Lo sentimos! Error inesperado", Toast.LENGTH_SHORT)
+                        .show();
+            }
+        }
     }
     //pedir datos aki
     private void launchUploadActivity(boolean isImage){
@@ -187,10 +218,10 @@ public class CamaraActivity extends Activity {
         if (type == MEDIA_TYPE_IMAGE) {
             mediaFile = new File(mediaStorageDir.getPath() + File.separator
                     + "IMG_" + timeStamp + ".jpg");
-        } /*else if (type == MEDIA_TYPE_VIDEO) {
+        } else if (type == MEDIA_TYPE_GALERIA) {
             mediaFile = new File(mediaStorageDir.getPath() + File.separator
-                    + "VID_" + timeStamp + ".mp4");
-        } */else {
+                    + "GAL_" + timeStamp + ".jpg");
+        } else {
             return null;
         }
   
