@@ -218,7 +218,7 @@ public class LoginActivity extends Activity {
 		 * por unos segundos para poder observar el progressdialog la podemos
 		 * eliminar si queremos
 		 */
-		SystemClock.sleep(950);
+		SystemClock.sleep(1200);
 
 		// si lo que obtuvimos no es null
 		if (jdata != null && jdata.length() > 0) {

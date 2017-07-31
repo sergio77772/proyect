@@ -52,7 +52,7 @@ public class RegistroActivity extends Activity {
 		// vista para que no se vea demasiado grande
 
 		browser.loadUrl("http://vt000269.ferozo.com/APPUCR/droidlogin/adduser.html");
-		browser.addJavascriptInterface(new JavascriptManager(), "Android");
+		//browser.addJavascriptInterface(new JavascriptManager(), "Android");
 
 		browser.setWebViewClient(new WebViewClient() {
 			// evita que los enlaces se abran fuera nuestra app en el navegador
