@@ -21,7 +21,7 @@ public class Aplicacion extends android.app.Application {
 	public void onCreate() {
 		super.onCreate();
 		// Inicializamos Parse con la APP_ID y la CLIENT_KEY
-		
+		SystemClock.sleep(1500);
 	
 		
 	}
