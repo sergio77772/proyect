@@ -98,7 +98,7 @@ public class LoginActivity extends Activity {
 					// el usuario y clave como parametros
 
 					new asynclogin().execute(usuario, passw);
-					saveOnPreferences(usuario, passw);
+					//saveOnPreferences(usuario, passw);
 				} else {
 					// si detecto un error en la primera validacion vibrar y
 					// mostrar un Toast con un mensaje de error.
@@ -299,7 +299,7 @@ public class LoginActivity extends Activity {
 			// enviamos y recibimos y analizamos los datos en segundo plano.
 			if (loginstatus(user, pass) == true) {
 				//aqui meter el radiobuton para guardar si esta cliqueado o no
-				//saveOnPreferences(user, pass);
+				saveOnPreferences(user, pass);
 				return "ok"; // login valido
 			} else {
 				return "err"; // login invalido

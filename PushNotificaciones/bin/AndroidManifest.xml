@@ -53,7 +53,7 @@
             android:launchMode="standard"
             android:screenOrientation="portrait" >
         </activity>
-        <!-- Agregar estas lineas a tu Android Manifest, justo despues de </activity> -->
+        <!-- Agregar estas lineas a tu Android Manifest, justo despues de </activity>-->
         
         <service android:name="com.parse.PushService" />
 
@@ -68,7 +68,7 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> 
 
                 <!-- Cambia netosolis.com.push_notificaciones por el nombre de tu package -->
                 <category android:name="munijujuy.com" />
