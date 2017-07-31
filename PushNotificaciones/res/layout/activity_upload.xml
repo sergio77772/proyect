@@ -46,7 +46,7 @@
         android:layout_marginTop="2dp"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Ingresa Nº de Contacto"
+        android:hint="Ingresa Tu Nº de Telefono"
         >
 
         <requestFocus />
@@ -70,7 +70,7 @@
         android:layout_marginTop="2dp"
         android:ems="10" 
         android:inputType="textNoSuggestions"
-        android:hint="¿Donde estas ubicado?"/>
+        android:hint="¿Direccion de tu Esquina/Punto?"/>
  
     <Button
         android:id="@+id/btnUpload"

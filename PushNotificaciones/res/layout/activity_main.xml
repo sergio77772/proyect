@@ -13,7 +13,7 @@
         android:layout_marginTop="5dip"
         android:layout_weight="4"
         android:gravity="center"
-        android:src="@drawable/consurso_3" />
+        android:src="@drawable/consurso_4" />
   
     <Button
         android:id="@+id/buttonRadio"

@@ -88,7 +88,16 @@
 
     <!-- Link to Registration Screen -->
 
-  
+  	<TextView
+        android:id="@+id/link_to_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnReg"
+        android:text="Registrarse!"
+        android:textColor="#8A0808"
+        android:textSize="20dip" />
 
     <TextView
         android:id="@+id/txBienvenida"

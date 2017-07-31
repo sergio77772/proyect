@@ -42,9 +42,9 @@
     <application
         android:name=".Vistas.Aplicacion"
         android:allowBackup="true"
-        android:icon="@drawable/ic_mario"
+        android:icon="@drawable/ucr2"
         android:label="@string/app_name"
-        android:logo="@drawable/ic_mario"
+        android:logo="@drawable/ucr2"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Vistas.MainActivity"
@@ -126,11 +126,13 @@
         </activity>
         <activity
             android:name=".Vistas.CamaraActivity"
-            android:label="@string/title_activity_camara" >
+            android:label="@string/title_activity_camara" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Vistas.UploadActivity"
-            android:label="@string/title_activity_upload" >
+            android:label="@string/title_activity_upload"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Vistas.PadronActivity"

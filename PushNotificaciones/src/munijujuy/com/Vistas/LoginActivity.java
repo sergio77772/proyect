@@ -76,7 +76,7 @@ public class LoginActivity extends Activity {
 		pass = (EditText) findViewById(R.id.edpassword);
 		blogin = (Button) findViewById(R.id.Blogin);
 	    Bmain= (Button) findViewById(R.id.Bmain);
-		//registrar = (TextView) findViewById(R.id.link_to_register);
+		registrar = (TextView) findViewById(R.id.link_to_register);
 		switchRemember = (Switch)findViewById(R.id.switchRemember);
 		
 		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
