@@ -13,24 +13,33 @@
         android:layout_alignParentRight="true"
         android:text="Tomar Foto" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonGaleria"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" >
-
-    </RelativeLayout>
-
     <Button
         android:id="@+id/buttonGaleria"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_above="@+id/btnCapturePicture"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Seleccionar de Galeria" 
-        android:visibility="invisible"/>
+        android:text="Seleccionar de Galeria"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/consurso_3" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Bienvenido a la seccion de Camara, para participar, toma una foto y subila a nuestra web"
+        android:textSize="20dp" />
 
 </RelativeLayout>
