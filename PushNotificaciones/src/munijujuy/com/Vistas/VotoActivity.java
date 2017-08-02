@@ -5,12 +5,14 @@ import munijujuy.com.R.layout;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.InputFilter.LengthFilter;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 public class VotoActivity extends Activity {
 	
@@ -37,7 +39,7 @@ public class VotoActivity extends Activity {
 				return false;
 			}
 		});
-		
+		Toast.makeText(this, "Por Favor Espera a que se carguen las Imagenes", Toast.LENGTH_LONG).show();
 	}
 	
 	/*@Override

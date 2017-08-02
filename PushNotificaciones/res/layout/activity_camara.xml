@@ -28,7 +28,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="44dp"
         android:gravity="center"
-        android:text="Bienvenido a la seccion de Camara, para participar, toma una foto y subila a nuestra web"
+        android:text="Bienvenido!! Para participar, solo tenes que tomarte una foto y subila a nuestra web. Suerte!!!"
         android:textSize="20dp" />
 
     <LinearLayout

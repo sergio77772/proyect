@@ -25,7 +25,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dip"
-        android:text="Usuario"
+        android:text="Usuario/E-mail"
         android:textColor="#372c24" />
 
     <EditText
@@ -43,7 +43,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="Contraseña/Telefono"
         android:textColor="#372c24" />
 
     <EditText
@@ -63,7 +63,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
-        android:text="Login" />
+        android:text="Ingresar" />
 
     <Switch
         android:id="@+id/switchRemember"
@@ -87,7 +87,17 @@
         android:visibility="invisible"/>
 
     <!-- Link to Registration Screen -->
-
+	
+	<TextView 
+  	    android:id="@+id/txtAviso"
+  	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="¿No tenes usuario y contraseña?"
+        android:textColor="#8A0808"
+        android:textSize="18dip"
+  	    />
+	
   	<TextView
         android:id="@+id/link_to_register"
         android:layout_width="fill_parent"
@@ -95,9 +105,10 @@
         android:clickable="true"
         android:gravity="center"
         android:onClick="btnReg"
-        android:text="Registrarse!"
-        android:textColor="#8A0808"
-        android:textSize="20dip" />
+        android:text="¡Registrarme Ahora!"
+        android:textColor="#FF0101"
+        android:textSize="22dp" />
+  	
 
     <TextView
         android:id="@+id/txBienvenida"

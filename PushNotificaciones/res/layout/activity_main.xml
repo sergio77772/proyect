@@ -29,7 +29,7 @@
 
     
 
-    <Button
+    <!--<Button
         android:id="@+id/buttonweb"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -38,9 +38,9 @@
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_recorrido"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Recorridos, caravanas o caminatas"
+        android:text="Recorridos, caravanas y caminatas"
         android:textSize="17dp" 
-        android:visibility="invisible"/>
+        android:visibility="visible"/>-->
 
     <Button
         android:id="@+id/buttonEvento"
@@ -79,18 +79,7 @@
         android:text="Punto Esquinas" 
         android:visibility="invisible"
         />
-    
-    <Button
-        android:id="@+id/buttonContacto"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="1dp"
-        android:background="#00addb"
-        android:drawableLeft="@drawable/ic_sugerencias"
-        android:drawableRight="@drawable/ic_ir"
-        android:text="Contacta con Nosotros" />
-    
+       
     <Button
         android:id="@+id/buttonNoticias"
         android:layout_width="match_parent"
@@ -101,6 +90,18 @@
         android:drawableLeft="@drawable/ic_play"
         android:drawableRight="@drawable/ic_ir"
         android:text="Noticias y Actualidad" />
+
+    
+    <Button
+        android:id="@+id/buttonCamara"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_cam"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Concurso Mi Esquina en Fotos" />
     
     <Button
         android:id="@+id/buttonVotoFoto"
@@ -112,29 +113,41 @@
         android:drawableLeft="@drawable/ic_play"
         android:drawableRight="@drawable/ic_ir"
         android:text="Vota tu imagen Favorita" />
-
     
     <Button
-        android:id="@+id/buttonCamara"
+        android:id="@+id/buttonweb"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
-        android:drawableLeft="@drawable/ic_cam"
+        android:drawableLeft="@drawable/ic_recorrido"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Comparti tu foto" />
+        android:text="Recorridos, caravanas y caminatas"
+        android:textSize="17dp" 
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/buttonPadron"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="1dp"
         android:layout_marginTop="1dp"
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_urna"
         android:drawableRight="@drawable/ic_ir"
         android:text="Donde Voto" />
+    
+    <Button
+        android:id="@+id/buttonContacto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#00addb"
+        android:drawableLeft="@drawable/ic_sugerencias"
+        android:drawableRight="@drawable/ic_ir"
+        android:text="Contacta con Nosotros" />
 
     <TextView
         android:id="@+id/txBienvenida"
