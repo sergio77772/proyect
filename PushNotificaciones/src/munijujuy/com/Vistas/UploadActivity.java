@@ -17,6 +17,9 @@ import java.io.IOException;
 
 
 
+
+
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -27,6 +30,9 @@ import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
  
+
+
+
 
 
 
@@ -45,10 +51,13 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -63,14 +72,15 @@ public class UploadActivity extends Activity {
      * la imagen / el vídeo se exhibe en la pantalla para el propósito de la previsualización. 
      * > UploadFileToServer método asíncrono se encarga de subir el archivo al servidor y actualizar la barra de progreso.
      */
-
+    
+    private Spinner txtTurno;
     private ProgressBar progressBar;
     private String filePath = null;
     private TextView txtPercentage;
     private ImageView imgPreview, imgGaleria;
     private EditText txtTelefono, txtNombre, txtEsquina;
     //private VideoView vidPreview;
-    public static String telefono,nombre,esquina;
+    public static String telefono,nombre,esquina,turno;
     private Button btnUpload, btnRegresar;
     long totalSize = 0;
     
@@ -88,6 +98,11 @@ public class UploadActivity extends Activity {
         txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
+        txtTurno = (Spinner)findViewById(R.id.spinnerTurno);
+        
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Turno, android.R.layout.simple_spinner_item);
+        txtTurno.setAdapter(adapter);
+        txtTurno.setPrompt("Selecciona tu Turno!");
         
         //vidPreview = (VideoView) findViewById(R.id.videoPreview);
         
@@ -121,8 +136,11 @@ public class UploadActivity extends Activity {
             	telefono = txtTelefono.getText().toString();
             	nombre = txtNombre.getText().toString();
             	esquina = txtEsquina.getText().toString();
-            	if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty()){
+            	turno = txtTurno.getSelectedItem().toString();
+            	if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty() && !turno.isEmpty()){
             		new UploadFileToServer().execute();
+            		Toast.makeText(UploadActivity.this, "Subiendo Foto, por favor, espera a que se complete la subida", Toast.LENGTH_SHORT).show();
+            		//Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
             	}else{
             		Toast.makeText(UploadActivity.this, "Debe completar todos los Campos Correctamente", Toast.LENGTH_SHORT).show();
             	}

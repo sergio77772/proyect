@@ -101,7 +101,9 @@
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_cam"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Concurso Mi Esquina en Fotos" />
+        android:text="Concurso Mi Esquina en Fotos" 
+        android:textSize="17dp" 
+        />
     
     <Button
         android:id="@+id/buttonVotoFoto"
@@ -112,7 +114,9 @@
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_play"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Vota tu imagen Favorita" />
+        android:text="Vota tu imagen Favorita" 
+        android:textSize="18dp" 
+        />
     
     <Button
         android:id="@+id/buttonweb"
@@ -136,7 +140,9 @@
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_urna"
         android:drawableRight="@drawable/ic_ir"
-        android:text="Donde Voto" />
+        android:text="Donde Voto" 
+        android:textSize="18dp" 
+        />
     
     <Button
         android:id="@+id/buttonContacto"

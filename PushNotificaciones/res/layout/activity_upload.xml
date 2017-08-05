@@ -1,10 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="${relativePackage}.${activityClass}" >
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="${relativePackage}.${activityClass}" >
 
     <ImageView
         android:id="@+id/imgPreview"
@@ -42,8 +48,8 @@
         android:id="@+id/editTextTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:inputType="phone"
         android:hint="Ingresa Tu Nº de Telefono"
@@ -57,8 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
    		android:inputType="textNoSuggestions"
    		android:hint="Tu Nombre"/>
 
@@ -66,12 +72,40 @@
         android:id="@+id/editTextEsquina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:ems="10" 
         android:inputType="textNoSuggestions"
         android:hint="¿Direccion de tu Esquina/Punto?"/>
- 
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Selecciona tu Turno: " />
+
+    <Spinner
+        android:id="@+id/spinnerTurno"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#DD8407"
+        android:gravity="center"
+        android:text="Nota: si estas todo el dia, deberas subir 2(dos) Fotos (una por cada turno), debido a que hay un premio en cada turno (Mañana y Tarde)" 
+        android:textSize="13sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+ 		
     <Button
         android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
@@ -82,7 +116,7 @@
         android:paddingRight="20dp"
         android:text="Subir Imagen"
         
-        android:layout_marginBottom="2dp"/>
+        android:layout_marginBottom="5dp"/>
     
     <Button
         android:id="@+id/btnRegresar"
@@ -94,6 +128,8 @@
         android:paddingRight="20dp"
         android:text="Volver al inicio"
         
-        android:layout_marginBottom="2dp"/>
+        android:layout_marginBottom="5dp"/>
 
 </LinearLayout>
+    
+</ScrollView>
