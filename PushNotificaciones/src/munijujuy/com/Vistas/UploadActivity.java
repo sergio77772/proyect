@@ -78,9 +78,9 @@ public class UploadActivity extends Activity {
     private String filePath = null;
     private TextView txtPercentage;
     private ImageView imgPreview, imgGaleria;
-    private EditText txtTelefono, txtNombre, txtEsquina;
+    private EditText txtTelefono, txtNombre, txtEsquina, txtBarrio;
     //private VideoView vidPreview;
-    public static String telefono,nombre,esquina,turno;
+    public static String telefono,nombre,esquina,turno,barrio;
     private Button btnUpload, btnRegresar;
     long totalSize = 0;
     
@@ -95,14 +95,15 @@ public class UploadActivity extends Activity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
         imgGaleria = (ImageView) findViewById(R.id.imgPreviewGaleria);
-        txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
+        //txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
+        txtBarrio = (EditText)findViewById(R.id.editTextBarrio);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
-        txtTurno = (Spinner)findViewById(R.id.spinnerTurno);
+        //txtTurno = (Spinner)findViewById(R.id.spinnerTurno);
         
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Turno, android.R.layout.simple_spinner_item);
-        txtTurno.setAdapter(adapter);
-        txtTurno.setPrompt("Selecciona tu Turno!");
+        //ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Turno, android.R.layout.simple_spinner_item);
+        //txtTurno.setAdapter(adapter);
+        //txtTurno.setPrompt("Selecciona tu Turno!");
         
         //vidPreview = (VideoView) findViewById(R.id.videoPreview);
         
@@ -133,11 +134,12 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
                 // uploading the file to server
             	//tomamos los datos ingresados por el usuario
-            	telefono = txtTelefono.getText().toString();
+            	//telefono = txtTelefono.getText().toString();
             	nombre = txtNombre.getText().toString();
             	esquina = txtEsquina.getText().toString();
-            	turno = txtTurno.getSelectedItem().toString();
-            	if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty() && !turno.isEmpty()){
+            	barrio = txtBarrio.getText().toString();
+            	//if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty() && !turno.isEmpty()){
+            	if(!nombre.isEmpty() && !esquina.isEmpty() && !barrio.isEmpty()){
             		new UploadFileToServer().execute();
             		Toast.makeText(UploadActivity.this, "Subiendo Foto, por favor, espera a que se complete la subida", Toast.LENGTH_SHORT).show();
             		//Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
@@ -152,7 +154,7 @@ public class UploadActivity extends Activity {
         btnRegresar.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(UploadActivity.this, MainActivity.class);
+				Intent i = new Intent(UploadActivity.this, CamaraActivity.class);
 				//i.putExtra("user", "nada");
 				//evitar que al retroceder vuelva a la vista anterior
 				i.setFlags(i.FLAG_ACTIVITY_NEW_TASK | i.FLAG_ACTIVITY_CLEAR_TASK);
@@ -229,7 +231,7 @@ public class UploadActivity extends Activity {
         }
         @SuppressWarnings("deprecation")
         private String uploadFile() {
-        	telefono = txtTelefono.getText().toString();
+        	barrio = txtBarrio.getText().toString();
         	nombre = txtNombre.getText().toString();
         	esquina = txtEsquina.getText().toString();
             String responseString = null;
@@ -255,7 +257,7 @@ public class UploadActivity extends Activity {
                 //Parámetros adicionales si desea pasar al servidor
                 
                 //AGREGAR ACA LOS DATOS!!!!!!!!!!!1
-                telefono = txtTelefono.getText().toString();
+                barrio = txtBarrio.getText().toString();
             	nombre = txtNombre.getText().toString();
             	esquina = txtEsquina.getText().toString();
                 
@@ -264,7 +266,7 @@ public class UploadActivity extends Activity {
                 //entity.addPart(nombre);
                 entity.addPart("nombre", new StringBody(nombre));
                 entity.addPart("esquina", new StringBody(esquina));
-                entity.addPart("telefono", new StringBody(telefono));
+                entity.addPart("barrio", new StringBody(barrio));
             	/*entity.addPart("nombre", new StringBody("Raul"));
             	entity.addPart("esquina", new StringBody("plazoleta"));
             	entity.addPart("telefono", new StringBody("1234567"));*/

@@ -44,7 +44,7 @@
         android:layout_marginBottom="5dp"
         android:visibility="gone"/>
 
-    <EditText
+    <!--  <EditText
         android:id="@+id/editTextTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         >
 
         <requestFocus />
-    </EditText>
+    </EditText>-->
 
     <EditText
         android:id="@+id/editTextNombre"
@@ -65,8 +65,18 @@
         android:ems="10" 
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-   		android:inputType="textNoSuggestions"
-   		android:hint="Tu Nombre"/>
+   		android:inputType="textCapSentences|textMultiLine"
+   		android:hint="Describenos el Problema"/>
+    
+    <EditText
+        android:id="@+id/editTextBarrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="¿Cual es tu Barrio?"/>
 
     <EditText
         android:id="@+id/editTextEsquina"
@@ -75,10 +85,10 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:ems="10" 
-        android:inputType="textNoSuggestions"
-        android:hint="¿Direccion de tu Esquina/Punto?"/>
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="¿Direccion del Problema?"/>
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,7 +102,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:ellipsize="marquee"
-        android:textSize="22sp" />
+        android:textSize="22sp" />  -->
 
     <TextView
         android:id="@+id/textView2"
@@ -101,34 +111,30 @@
         android:textStyle="italic"
         android:textColor="#DD8407"
         android:gravity="center"
-        android:text="Nota: si estas todo el dia, deberas subir 2(dos) Fotos (una por cada turno), debido a que hay un premio en cada turno (Mañana y Tarde)" 
+        android:text="Nota: Trata de que la foto sea nitida y especifica bien la direccion" 
         android:textSize="13sp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"/>
  		
     <Button
         android:id="@+id/btnUpload"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        
+        android:layout_marginBottom="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="Subir Imagen"
-        
-        android:layout_marginBottom="5dp"/>
+        android:text="Subir Imagen" />
     
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        
+        android:layout_marginBottom="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="Volver al inicio"
-        
-        android:layout_marginBottom="5dp"/>
+        android:text="Volver al inicio" />
 
 </LinearLayout>
     

@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:text="Toma Tu Foto!" />
+        android:text="Tomar Foto del Problema" />
 
     <TextView
         android:id="@+id/textView1"
@@ -28,7 +28,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="44dp"
         android:gravity="center"
-        android:text="Bienvenido!! Para participar, solo tenes que tomarte una foto y subila a nuestra web. Suerte!!!"
+        android:text="Bienvenido!! Esta aplicacion esta pensada para que nos comentes que problemas hay en tu barrio"
         android:textSize="20dp" />
 
     <LinearLayout
