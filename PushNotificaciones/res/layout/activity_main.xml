@@ -51,14 +51,14 @@
     <Button
         android:id="@+id/buttonEvento"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginBottom="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
         android:background="#00addb"
         android:drawableLeft="@drawable/ic_calendar"
         android:drawableRight="@drawable/ic_ir"
         android:text="Agregar Evento" 
-        android:visibility="visible"/>
+        android:visibility="invisible"/>
 
     <Button
         android:id="@+id/buttonCalendario"

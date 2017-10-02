@@ -7,5 +7,5 @@ public class Config {
 	public static final String FILE_UPLOAD_URL = "http://www.comitecapitaljujuy.com/MOVIL/fileUpload.php";
      
     // Directory name to store captured images and videos
-    public static final String IMAGE_DIRECTORY_NAME = "Android File Upload";
+    public static final String IMAGE_DIRECTORY_NAME = "UCR_JUJUY";
 }
