@@ -19,7 +19,7 @@
         android:layout_marginBottom="2dp"
         
         android:gravity="center"
-        android:src="@drawable/consurso_4" />
+        android:src="@drawable/consurso2_1" />
   
     <Button
         android:id="@+id/buttonRadio"

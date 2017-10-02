@@ -44,7 +44,7 @@
         android:layout_marginBottom="5dp"
         android:visibility="gone"/>
 
-    <!--  <EditText
+    <EditText
         android:id="@+id/editTextTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         >
 
         <requestFocus />
-    </EditText>-->
+    </EditText>
 
     <EditText
         android:id="@+id/editTextNombre"
@@ -65,10 +65,10 @@
         android:ems="10" 
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-   		android:inputType="textCapSentences|textMultiLine"
-   		android:hint="Describenos el Problema"/>
+   		android:inputType="textNoSuggestions"
+   		android:hint="Ingresa tu Nombre y Apellido"/>
     
-    <EditText
+    <!-- <EditText
         android:id="@+id/editTextBarrio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
         android:layout_marginTop="5dp"
         android:ems="10"
         android:inputType="textNoSuggestions"
-        android:hint="¿Cual es tu Barrio?"/>
+        android:hint="¿Cual es tu Barrio?"/> -->
 
     <EditText
         android:id="@+id/editTextEsquina"
@@ -85,8 +85,8 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:ems="10" 
-        android:inputType="textCapSentences|textMultiLine"
-        android:hint="¿Direccion del Problema?"/>
+        android:inputType="textNoSuggestions"
+        android:hint="¿Direccion de tu esqina o punto?"/>
 
     <!--<TextView
         android:id="@+id/textView1"
@@ -109,9 +109,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="italic"
-        android:textColor="#DD8407"
+        android:textColor="#FF1A1A"
         android:gravity="center"
-        android:text="Nota: Trata de que la foto sea nitida y especifica bien la direccion" 
+        android:text="Nota: Recuerda que la foto debe ser con algun candidato y trata de que la foto sea nitida!" 
         android:textSize="13sp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"/>
@@ -124,7 +124,8 @@
         android:layout_marginBottom="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="Subir Imagen" />
+        android:text="Subir Imagen"
+        android:background="#FF6565" />
     
     <Button
         android:id="@+id/btnRegresar"
@@ -134,7 +135,8 @@
         android:layout_marginBottom="5dp"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
-        android:text="Volver al inicio" />
+        android:text="Volver al inicio" 
+        android:background="#FFAE6B"/>
 
 </LinearLayout>
     

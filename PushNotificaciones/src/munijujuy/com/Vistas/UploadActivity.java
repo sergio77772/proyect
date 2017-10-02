@@ -95,8 +95,8 @@ public class UploadActivity extends Activity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         imgPreview = (ImageView) findViewById(R.id.imgPreview);
         imgGaleria = (ImageView) findViewById(R.id.imgPreviewGaleria);
-        //txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
-        txtBarrio = (EditText)findViewById(R.id.editTextBarrio);
+        txtTelefono = (EditText)findViewById(R.id.editTextTelefono);
+        //txtBarrio = (EditText)findViewById(R.id.editTextBarrio);
         txtNombre = (EditText)findViewById(R.id.editTextNombre);
         txtEsquina = (EditText)findViewById(R.id.editTextEsquina);
         //txtTurno = (Spinner)findViewById(R.id.spinnerTurno);
@@ -134,12 +134,12 @@ public class UploadActivity extends Activity {
             public void onClick(View v) {
                 // uploading the file to server
             	//tomamos los datos ingresados por el usuario
-            	//telefono = txtTelefono.getText().toString();
+            	telefono = txtTelefono.getText().toString();
             	nombre = txtNombre.getText().toString();
             	esquina = txtEsquina.getText().toString();
-            	barrio = txtBarrio.getText().toString();
+            	//barrio = txtBarrio.getText().toString();
             	//if(!telefono.isEmpty() && !nombre.isEmpty() && !esquina.isEmpty() && !turno.isEmpty()){
-            	if(!nombre.isEmpty() && !esquina.isEmpty() && !barrio.isEmpty()){
+            	if(!nombre.isEmpty() && !esquina.isEmpty() && !telefono.isEmpty()){
             		new UploadFileToServer().execute();
             		Toast.makeText(UploadActivity.this, "Subiendo Foto, por favor, espera a que se complete la subida", Toast.LENGTH_SHORT).show();
             		//Toast.makeText(UploadActivity.this, "el boton si anda", Toast.LENGTH_SHORT).show();
@@ -231,7 +231,8 @@ public class UploadActivity extends Activity {
         }
         @SuppressWarnings("deprecation")
         private String uploadFile() {
-        	barrio = txtBarrio.getText().toString();
+        	//barrio = txtBarrio.getText().toString();
+        	telefono = txtTelefono.getText().toString();
         	nombre = txtNombre.getText().toString();
         	esquina = txtEsquina.getText().toString();
             String responseString = null;
@@ -257,7 +258,8 @@ public class UploadActivity extends Activity {
                 //Parámetros adicionales si desea pasar al servidor
                 
                 //AGREGAR ACA LOS DATOS!!!!!!!!!!!1
-                barrio = txtBarrio.getText().toString();
+                telefono = txtTelefono.getText().toString();
+                //barrio = txtBarrio.getText().toString();
             	nombre = txtNombre.getText().toString();
             	esquina = txtEsquina.getText().toString();
                 
@@ -266,7 +268,7 @@ public class UploadActivity extends Activity {
                 //entity.addPart(nombre);
                 entity.addPart("nombre", new StringBody(nombre));
                 entity.addPart("esquina", new StringBody(esquina));
-                entity.addPart("barrio", new StringBody(barrio));
+                entity.addPart("telefono", new StringBody(telefono));
             	/*entity.addPart("nombre", new StringBody("Raul"));
             	entity.addPart("esquina", new StringBody("plazoleta"));
             	entity.addPart("telefono", new StringBody("1234567"));*/
