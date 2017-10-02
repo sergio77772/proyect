@@ -1556,6 +1556,7 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f0200b1;
         public static final int splash_login=0x7f0200b2;
         public static final int ucr2=0x7f0200b3;
+        public static final int ucr3=0x7f0200b4;
     }
     public static final class id {
         public static final int Blogin=0x7f09006c;

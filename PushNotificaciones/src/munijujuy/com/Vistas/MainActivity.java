@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		ParseAnalytics.trackAppOpened(getIntent());
+		//ParseAnalytics.trackAppOpened(getIntent());
 
 		btnAfiliado = (Button) findViewById(R.id.buttonRadio);
 		//bmain = (Button) findViewById(R.id.Bmain);

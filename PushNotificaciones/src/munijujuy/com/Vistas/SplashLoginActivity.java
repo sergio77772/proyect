@@ -17,28 +17,28 @@ public class SplashLoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.activity_splash_login);
-		/*prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+		prefs = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 		Intent intentLogin = new Intent(this,LoginActivity.class);
-		intentLogin.setFlags(intentLogin.FLAG_ACTIVITY_NEW_TASK | intentLogin.FLAG_ACTIVITY_CLEAR_TASK);*/
+		intentLogin.setFlags(intentLogin.FLAG_ACTIVITY_NEW_TASK | intentLogin.FLAG_ACTIVITY_CLEAR_TASK);
 		//Intent intentMain = new Intent(this,MainActivity.class);
 		Intent intentMain = new Intent(this,MainActivity.class);
 		intentMain.setFlags(intentMain.FLAG_ACTIVITY_NEW_TASK | intentMain.FLAG_ACTIVITY_CLEAR_TASK);
 		startActivity(intentMain);
 
-		/*if(!TextUtils.isEmpty(getUserMailPrefs()) && !TextUtils.isEmpty(getUserPassPrefs())){
+		if(!TextUtils.isEmpty(getUserMailPrefs()) && !TextUtils.isEmpty(getUserPassPrefs())){
 			startActivity(intentMain);
 		}else{
 			startActivity(intentLogin);
-		}*/
+		}
 		
 		
 	}
-	/*private String getUserMailPrefs(){
+	private String getUserMailPrefs(){
 		return prefs.getString("email", "");
 	}
 	
 	private String getUserPassPrefs(){
 		return prefs.getString("pass", "");
-	}*/
+	}
 }
 

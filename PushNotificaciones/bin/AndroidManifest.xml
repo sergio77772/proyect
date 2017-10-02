@@ -8,16 +8,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    
+    
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
     <uses-permission android:name="munijujuy.com.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-    <!-- Cambia netosolis.com.push_notificaciones por el nombre de tu package -->
+    <!-- Cambia netosolis.com.push_notificaciones por el nombre de tu package
     <permission
         android:name="munijujuy.com.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
@@ -25,7 +24,7 @@
         android:name="munijujuy.com.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="munijujuy.com.permission.C2D_MESSAGE" />
+    <uses-permission android:name="munijujuy.com.permission.C2D_MESSAGE" /> -->
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -55,7 +54,7 @@
         </activity>
         <!-- Agregar estas lineas a tu Android Manifest, justo despues de </activity>-->
         
-        <service android:name="com.parse.PushService" />
+        <!-- <service android:name="com.parse.PushService" />
 
         <receiver android:name="com.parse.ParseBroadcastReceiver" >
             <intent-filter>
@@ -70,11 +69,11 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> 
 
-                <!-- Cambia netosolis.com.push_notificaciones por el nombre de tu package -->
+                
                 <category android:name="munijujuy.com" />
             </intent-filter>
-        </receiver>
-        
+        </receiver> -->
+        <!-- Cambia netosolis.com.push_notificaciones por el nombre de tu package -->
 
         <activity
             android:name=".Vistas.Radio"
@@ -117,7 +116,7 @@
         <activity
             android:name="munijujuy.com.Vistas.RegistroActivity"
             android:label="@string/title_activity_registro" >
-        </activity>
+        </activity>
         -->
         <activity
             android:name=".Vistas.SplashLoginActivity"
